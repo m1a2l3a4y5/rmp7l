@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rmp7l.AddReminderPage"
+             Title="AddReminderPage">
+    <StackLayout Padding="20" Background="#D8D3F3" Spacing="20">
+        <Label Text="Введите новое напоминание " 
+           FontSize="20" 
+           HorizontalOptions="Center" />
+
+        <DatePicker x:Name="datePicker" FontSize="20"/>
+        <TimePicker x:Name="timePicker" FontSize="20"/>
+
+        <Entry x:Name="messageEntry" 
+           Placeholder="Введите сообщение" 
+           Keyboard="Text"/>
+
+        <Button Text="Сохранить" Background="#42387D"
+            Clicked="OnAddReminderClicked"
+            Margin="0,5,0,5"/>
+
+        <Button Text="Назад" Background="#42387D"
+            Clicked="OnBackButtonClicked" />
+    </StackLayout>
+</ContentPage>
